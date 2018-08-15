@@ -17,4 +17,7 @@ echo "Medium/cheap gasPrice, according to the last ".$blocks." blocks = ". getGa
 
 
 //To browse full returned jsons
-//var_dump(analyzeGasPrice($url, $blocks));
+$full = analyzeGasPrice($url, $blocks);
+echo "Slow/cheapest gasPrice, according to the last ".$blocks." blocks = ". $full['percentile_10'] . ' gwei'.PHP_EOL;
+echo "Fast/expensive gasPrice, according to the last ".$blocks." blocks = ". $full['percentile_50']. ' gwei'.PHP_EOL;
+
