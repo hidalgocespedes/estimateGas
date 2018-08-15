@@ -30,7 +30,7 @@ The meaning of percentiles (e.g. percentile_X) is that "the X % of the gasPrices
 But, in the contrary, if you can wait some more time but you want to assure that (earthquakes apart) your transaction is cheap and very likely successful in an affordable amount of blocks/time, you can try with percentiles 25 or indeed 10.
 
 
-## Test
+# Test
 
 
 ```
@@ -40,7 +40,7 @@ Study based on 10 blocks
 Medium/cheap gasPrice, according to the last 10 blocks = 15 gwei
 ```
 
-## Human interpretation
+# Human interpretation
 
 As have been returned in the previous test, the estimation based on percentiles could be traslated into an "speed" or "economic" interpretation. 
 
@@ -66,7 +66,7 @@ function getGasPriceEstimation($url, $blocks = 10, $speed = "medium") {
 ?>
 ```
 
-## Full returned data
+# Full returned data
 
 The following is the aspect of the full JSON you can get calling the function **"analyzeGasPrice($url, $blocks)"**. Enjoy it.
 
@@ -109,7 +109,7 @@ array(7) {
 }
 ```
 
-## Future work
+# Future work
 
 This script can be extended to study the gasPrices against an historical estimation series. It is a pity that EthGasStation does not supply archived estimations to do a comparison.
 
