@@ -1,9 +1,7 @@
+<?php
 /*
 *	Idea and coding, https://github.com/hidalgocespedes
 */
-
-
-<?php
 
 require "gas.php";
 

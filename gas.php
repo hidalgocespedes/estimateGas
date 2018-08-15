@@ -1,9 +1,8 @@
+<?php
+
 /*
 *	Idea and coding, https://github.com/hidalgocespedes
 */
-
-
-<?php
 
 if (!function_exists("getLatestBlock")) { 
 
