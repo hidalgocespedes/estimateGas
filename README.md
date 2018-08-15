@@ -38,6 +38,7 @@ $ php testgas.php   -u https://mainnet.infura.io/<your_INFURA_key>
 URL https://mainnet.infura.io/<your_INFURA_key>
 Study based on 10 blocks
 Medium/cheap gasPrice, according to the last 10 blocks = 15 gwei
+```
 
 
 ## Full returned data
@@ -67,78 +68,7 @@ array(7) {
       ["min"]=>
       int(1)
     }
-    [6151734]=>
-    array(3) {
-      ["moda"]=>
-      int(20)
-      ["media"]=>
-      float(35.609677419355)
-      ["min"]=>
-      int(15)
-    }
-    [6151735]=>
-    array(3) {
-      ["moda"]=>
-      int(10)
-      ["media"]=>
-      float(22.36862745098)
-      ["min"]=>
-      int(9)
-    }
-    [6151736]=>
-    array(3) {
-      ["moda"]=>
-      int(9)
-      ["media"]=>
-      float(19.303571428571)
-      ["min"]=>
-      int(8)
-    }
-    [6151737]=>
-    array(3) {
-      ["moda"]=>
-      int(12)
-      ["media"]=>
-      float(33.561111111111)
-      ["min"]=>
-      int(10)
-    }
-    [6151738]=>
-    array(3) {
-      ["moda"]=>
-      int(10)
-      ["media"]=>
-      float(21.936507936508)
-      ["min"]=>
-      int(8)
-    }
-    [6151739]=>
-    array(3) {
-      ["moda"]=>
-      int(20)
-      ["media"]=>
-      float(29.69298245614)
-      ["min"]=>
-      float(8.8)
-    }
-    [6151740]=>
-    array(3) {
-      ["moda"]=>
-      int(8)
-      ["media"]=>
-      float(11.736363636364)
-      ["min"]=>
-      float(6.5)
-    }
-    [6151741]=>
-    array(3) {
-      ["moda"]=>
-      int(10)
-      ["media"]=>
-      float(18.093023255814)
-      ["min"]=>
-      int(8)
-    }
+	...
   }
   ["moda"]=>
   int(8)
@@ -153,8 +83,8 @@ array(7) {
 }
 ```
 
-## To be studied
+## Future work
 
-This script can be extended to study the gasPrices in an historical perspective. It is a pity that EthGasStation does not supply archived estimations to do a comparison.
+This script can be extended to study the gasPrices against an historical estimation series. It is a pity that EthGasStation does not supply archived estimations to do a comparison.
 
 
