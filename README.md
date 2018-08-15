@@ -40,9 +40,35 @@ Study based on 10 blocks
 Medium/cheap gasPrice, according to the last 10 blocks = 15 gwei
 ```
 
+## Human interpretation
+
+As have been returned in the previous test, the estimation based on percentiles could be traslated into an "speed" or "economic" interpretation. 
+
+The most exigent percentile (50) is more expensive but can be fast in comparison with percentile 10. Read carefully the following block to understand the "synonims" of each percentile. Whe nothing about is specified you get the safest and expensive estimation.
+
+
+```php
+
+<?php
+function getGasPriceEstimation($url, $blocks = 10, $speed = "medium") {
+
+    $json = analyzeGasPrice($url, $blocks);
+    if (in_array($speed, Array("slow", "cheapest"))) {
+        $gas = $json['percentile_10'];
+    }
+    else if (in_array($speed, Array("medium", "safe", "cheap"))) {
+        $gas = $json['percentile_25'];
+    }
+    else $gas = $json['percentile_50'];
+
+    return $gas;
+}
+?>
+```
 
 ## Full returned data
-The following is the aspect of the full JSON you can get calling the function *"analyzeGasPrice($url, $blocks)"*. Enjoy it.
+
+The following is the aspect of the full JSON you can get calling the function **"analyzeGasPrice($url, $blocks)"**. Enjoy it.
 
 ```
 array(7) {
