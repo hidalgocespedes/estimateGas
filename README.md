@@ -38,8 +38,6 @@ $ php testgas.php   -u https://mainnet.infura.io/<your_INFURA_key>
 URL https://mainnet.infura.io/<your_INFURA_key>
 Study based on 10 blocks
 Medium/cheap gasPrice, according to the last 10 blocks = 15 gwei
-```
-
 
 
 ## Full returned data
