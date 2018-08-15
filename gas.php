@@ -1,3 +1,8 @@
+/*
+*	Idea and coding, https://github.com/hidalgocespedes
+*/
+
+
 <?php
 
 if (!function_exists("getLatestBlock")) { 
@@ -65,6 +70,7 @@ function getLatestBlock($url) {
 	
 
 //Main function
+//Returns gasPrice and estimations in gwei units
 function analyzeGasPrice($url, $bloques = 50, $verbose = false) {
 
 	$results = Array();
@@ -125,7 +131,7 @@ function analyzeGasPrice($url, $bloques = 50, $verbose = false) {
 
 }
 
-
+//Returns gasPrice in gwei units
 function getGasPriceEstimation($url, $blocks = 10, $speed = "medium") {
 
 	$json = analyzeGasPrice($url, $blocks);
