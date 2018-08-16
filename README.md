@@ -32,19 +32,22 @@ But, in the contrary, if you can wait some more time but you want to assure that
 
 # Test
 
+As a test you can invoke ** testgas.php ** to test the gasPrice analysis at any time.
+
 
 ```
-$ php testgas.php   -u https://mainnet.infura.io/<your_INFURA_key>
+$ php testgas.php   -u https://mainnet.infura.io/<your_INFURA_key> -b 10
 URL https://mainnet.infura.io/<your_INFURA_key>
 Study based on 10 blocks
 Medium/cheap gasPrice, according to the last 10 blocks = 15 gwei
 ```
 
+
 # Human interpretation
 
 As it has been returned in the previous test, the estimation based on percentiles could be traslated into an "speed" or "economic" interpretation. 
 
-The most exigent percentile (50) is more expensive but can be fast in comparison with percentile 10. Read carefully the following block to understand the "synonims" of each percentile. Whe nothing about is specified you get the safest and expensive estimation.
+The most exigent percentile (50) is more expensive but can be fast in comparison with percentile 10. Read carefully the following block to understand the "synonims" of each percentile. When nothing about is specified you get the safest and expensive estimation.
 
 
 ```php
