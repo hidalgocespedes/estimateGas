@@ -43,6 +43,23 @@ Medium/cheap gasPrice, according to the last 10 blocks = 15 gwei
 ```
 
 
+
+Just the medium estimation based on the last 5 blocks:
+
+
+```
+$ php testgas.php   -u https://mainnet.infura.io/<your_INFURA_key> -b 0
+URL https://mainnet.infura.io/<your_INFURA_key>
+Medium/cheap gasPrice, according to the last 5 (example) blocks = 21.9 gwei
+Study based on 10 blocks
+ Slow/cheapest gasPrice, according to the last 10 blocks = 20.1 gwei
+ Medium/cheap gasPrice, according to the last 10 blocks = 21.5 gwei
+ Fast/expensive gasPrice, according to the last 10 blocks = 22.6 gwei
+
+
+```
+
+
 # Human interpretation
 
 As it has been returned in the previous test, the estimation based on percentiles could be traslated into an "speed" or "economic" interpretation. 
