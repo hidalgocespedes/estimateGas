@@ -61,12 +61,21 @@ function getBlock($url,$block) {
 	return $d['result'];
 }
 
-
 //Shortcut to getBlock
 function getLatestBlock($url) {
 	return getBlock($url,"latest");
 }
+
 	
+//JSON RPC to retrieve full data of a block
+function getEstimateGas($url,$to, $_data) {
+    $data = Array("jsonrpc" => "2.0","method" => "eth_estimateGas",
+        "params" => Array(Array("to" =>$to, "data" => $_data)),
+        "id"=>1);
+    $d = json_decode(postContent($url,$data),true);
+    return hexdec($d['result']);
+}
+
 
 //Main function
 //Returns gasPrice and estimations in gwei units
